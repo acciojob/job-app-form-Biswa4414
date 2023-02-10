@@ -8,48 +8,57 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-<!-- 	    <h1>Job Application Form</h1> -->
-   <form  method="post">
+	<form>
 		<div>
 			<label for="name">Name*</label>
-			<input type="text" required id="name">
+			<input type="text"required id=name placeholder="Name">
 		</div>
 		<div>
-			<label for="email">Email*</label>
-			<input type="email" required id="email">
+			<label for="email">E-mail*</label>
+			<input type="email" required id=email placeholder="Email">
+		</div>	
+		<div>
+			<label>Gender*</label>
+			<label for="male">Male</label>
+			<input type="radio"id="male"name="gender">
+			<label for="female">Female</label>
+			<input type="radio"id="female"name="gender">
+			<label for="other">Others</label>
+			<input type="radio"id="other"name="gender">
 		</div>
 		<div>
-			<label for="gender">Gender*</label>
-			<input type="radio" name="gender" required id="gender">Male
-			<input type="radio" name="gender" required id="gender">Female
-		</div>
-		<div>
-			<label for="laptop">Laptop Brands</label>
-		<select id="laptop">
-			<option value="apple">Apple</option>
-			<option value="asus">Asus</option>
-			<option value="hp">HP</option>
-		</select>
+			<label>Laptop Brands:</label>
+			<label for="brand1">Apple</label>
+			<input type="checkbox"id="brand1"name="Laptop Brands">
+			<label for="brand2">Asus</label>
+			<input type="checkbox"id="brand2"name="Laptop Brands">
+			<label for="brand3">HP</label>
+			<input type="checkbox"id="brand3"name="Laptop Brands">
 		</div>
 		<div>
 			<label for="age">Age*</label>
-			<input type="number" required id="age">
+			<input type="number"required id="age"placeholder="Age">
 		</div>
 		<div>
 			<label for="dob">DOB*</label>
-			<input type="date" required id="dob">
+			<input type="date"required id="dob">
 		</div>
 		<div>
 			<label for="password">Password*</label>
-			<input type="password" required id="password">
+			<input type="number"required id="password"placeholder="Password">
 		</div>
 		<div>
 			<label for="portfolio">Portfolio</label>
-			<input type="url" required id="portfolio">
+			<input type="url"required id="portfolio"placeholder="Enter your URL">
 		</div>
-		<button type="submit">Submit</button>
+		<input type="reset"id="reset">
+			<input type="submit"id="submit"> 
+		</div>
 	</form>
+	
     <script type="text/javascript" src="./script.js">
+
+		
 </script>
 
 </body>
